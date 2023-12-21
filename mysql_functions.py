@@ -1,15 +1,16 @@
 import mysql.connector
 import datetime
 from mysql.connector import Error
+from config import DB_HOST, DB_USER, DB_PASSWORD, DB_NAME
 
-# Fonction pour établir une connexion à la base de données MySQL
+# Fonction pour établir une connexion à la base de données MySQL login dans le config.py
 def create_connection():
     try:
         conn = mysql.connector.connect(
-            host="host",
-            user="user",
-            password="pass",
-            database="db"
+            host=DB_HOST,
+            user=DB_USER,
+            password=DB_PASSWORD,
+            database=DB_NAME
         )
         if conn.is_connected():
             print("Connexion à la base de données MySQL établie.")

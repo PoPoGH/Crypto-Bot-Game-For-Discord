@@ -1,11 +1,13 @@
 import os
 import discord
-from discord.ext import commands
 import asyncio
+from discord.ext import commands
+from config import TOKEN
 from mysql_functions import create_connection, user_exists, insert_user
 
-# Définissez votre token ici
-TOKEN = "token-here"
+
+# Définissez votre token dans le config.py
+TOKEN = TOKEN
 
 intents = discord.Intents.default()
 intents.members = True

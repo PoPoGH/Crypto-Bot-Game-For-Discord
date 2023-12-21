@@ -6,3 +6,6 @@ DB_NAME = "nom_de_la_base_de_donnees"
 
 # Information du token discord
 TOKEN = "token-here"
+
+# Prefix du bot
+PREFIX = "c!"
